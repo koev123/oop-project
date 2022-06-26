@@ -1,7 +1,7 @@
 import { Person } from "./Person";
 
-import class Waiter extends Person {
-    constructor(private runner:string , name:Person,  id:Person) {
+export class Waiter extends Person {
+    constructor(private runner:string , name:string,  id:number) {
         super(name,id);
         
     }

@@ -1,3 +1,5 @@
 export abstract class Person {
-    constructor(protected name:string,protected id:number) {}
+    constructor(
+        protected name: string,
+        protected id: number) { }
 }
