@@ -1,18 +1,12 @@
-"use strict";
-exports.__esModule = true;
-exports.Restaurant = void 0;
-var tableManager_1 = require("./Table/tableManager");
-var Restaurant = /** @class */ (function () {
-    function Restaurant(name, address, table) {
-        if (table === void 0) { table = []; }
+import { TableManager } from "./Table/tableManager";
+export class Restaurant {
+    constructor(name, address, table = []) {
         this.name = name;
         this.address = address;
         this.table = table;
-        this.tables = new tableManager_1.TableManager();
+        this.tables = new TableManager();
     }
-    Restaurant.prototype.addTable = function (table) {
+    addTable(table) {
         return this.table.push(table);
-    };
-    return Restaurant;
-}());
-exports.Restaurant = Restaurant;
+    }
+}

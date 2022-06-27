@@ -1,16 +1,11 @@
-"use strict";
-exports.__esModule = true;
-exports.TableManager = void 0;
-var TableManager = /** @class */ (function () {
-    function TableManager() {
+export class TableManager {
+    constructor() {
         this.table = [];
     }
-    TableManager.prototype.getNumberOfTable = function () {
+    getNumberOfTable() {
         return this.table.length;
-    };
-    TableManager.prototype.findFreeTable = function () {
+    }
+    findFreeTable() {
         return undefined;
-    };
-    return TableManager;
-}());
-exports.TableManager = TableManager;
+    }
+}

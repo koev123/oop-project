@@ -1,28 +1,24 @@
-"use strict";
-exports.__esModule = true;
-exports.Table = void 0;
-var TableStatus_1 = require("./TableStatus");
-var Table = /** @class */ (function () {
-    function Table(id) {
+import { Tablestatus } from "./TableStatus";
+export class Table {
+    constructor(id, chair = []) {
         this.id = id;
-        this.status = TableStatus_1.Tablestatus.FREE;
+        this.chair = chair;
+        this.status = Tablestatus.FREE;
         this.customer = undefined;
     }
-    Table.prototype.setCustomer = function (customer) {
+    setCustomer(customer) {
         this.customer = customer;
-    };
-    Table.prototype.hasCustomer = function () {
+    }
+    hasCustomer() {
         return this.customer !== undefined;
-    };
-    Table.prototype.getCustomer = function () {
+    }
+    getCustomer() {
         return this.customer;
-    };
-    Table.prototype.getStatue = function () {
+    }
+    getStatue() {
         return this.status;
-    };
-    Table.prototype.setStatus = function (newStatus) {
+    }
+    setStatus(newStatus) {
         this.status = newStatus;
-    };
-    return Table;
-}());
-exports.Table = Table;
+    }
+}

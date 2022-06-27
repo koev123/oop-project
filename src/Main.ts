@@ -1,4 +1,5 @@
-import { Customer } from "./customer/Customer";
+
+import { Customer } from "./humen/customer/Customer";
 import { Restaurant } from "./Restaurant";
 import { Chair } from "./Table/Chair";
 import { Table } from "./Table/Table";
