@@ -15,13 +15,16 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.Cheff = void 0;
-var Staff_1 = require("./Staff");
-var Cheff = /** @class */ (function (_super) {
-    __extends(Cheff, _super);
-    function Cheff(name, age, gender, category) {
-        return _super.call(this, category, name, age, gender) || this;
+exports.SideDish = void 0;
+var ManuItem_1 = require("../ManuItem");
+var SideDish = /** @class */ (function (_super) {
+    __extends(SideDish, _super);
+    function SideDish(Type, menuItemId, menuItemName, menuItemType) {
+        if (Type === void 0) { Type = "SideDish"; }
+        var _this = _super.call(this, menuItemId, menuItemName, menuItemType) || this;
+        _this.Type = Type;
+        return _this;
     }
-    return Cheff;
-}(Staff_1.Staff));
-exports.Cheff = Cheff;
+    return SideDish;
+}(ManuItem_1.MenuItem));
+exports.SideDish = SideDish;

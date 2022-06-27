@@ -1,4 +1,4 @@
-import { MenuItem } from "../Order/ManuItem";
+import { MenuItem } from "../ManuItem";
 
 export class Drink extends MenuItem{
     constructor(private Type:string = "drink", menuItemId:number,menuItemName:string,menuItemType:string){

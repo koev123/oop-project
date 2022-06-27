@@ -1,8 +1,7 @@
-
 import { Customer } from "./humen/customer/Customer";
 import { Restaurant } from "./Restaurant";
-import { Chair } from "./Table/Chair";
 import { Table } from "./Table/Table";
+
 
 // create Restaurant
 let restaurant= new Restaurant('PNC restaurant','Phnom penh');

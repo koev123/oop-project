@@ -2,7 +2,6 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "target": "es2018",
     "outDir": "dist"
   },
   "include": ["src/**/*"],
