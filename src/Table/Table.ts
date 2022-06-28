@@ -1,34 +1,14 @@
 
-import { Customer } from "../humen/customer/Customer";
 import { Chair } from "./Chair";
 import { Tablestatus } from "./TableStatus";
 
 export class Table {
+    chair: Chair[]=[];
     
-   
-    private  status=Tablestatus.FREE;
-    private customer?:Customer=undefined;
-    constructor(private id:number,private chair:Chair[]=[]) { }
+    constructor(private id:number, private  status:Tablestatus) { }
 
-    setCustomer(customer:Customer){
-        this.customer=customer;
-    }
     
-    hasCustomer(){
-        return this.customer!==undefined;
-    }
-
-    getCustomer(){
-        return this.customer
-    }
-
-    getStatue(){
-        return this.status;
-    }
-
-    setStatus(newStatus: Tablestatus){
-        this.status=newStatus;
-    }
-  
-   
+   addCahir(chair:Chair){
+    return this.chair.push(chair)
+   }
 }

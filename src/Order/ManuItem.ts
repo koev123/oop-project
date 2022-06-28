@@ -15,11 +15,9 @@ export class MenuItem{
         private menuItemId:number,
         private menuItemName:string,
         private menuItemType:string){}
-
         getTypeDessert(customerDessert:Dessert){
             this.desserts.push(customerDessert);
         }
-
         getTypeDrink(customerDrink:Drink){
             this.drinks.push(customerDrink);
         }

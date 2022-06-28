@@ -1,6 +1,10 @@
 import { Customer } from "../humen/customer/Customer";
 
 export class Chair{
-    constructor(customer?:Customer){}
+    public customer?:Customer
+    constructor(private chairid:number){}
 
+    addCustomer(customer:Customer){
+        return this.customer=customer;
+    }
 }

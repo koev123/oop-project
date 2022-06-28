@@ -5,8 +5,8 @@ export class TableManager{
     getNumberOfTable():number{
         return this.table.length;
     }
+    
     findFreeTable():Table|undefined{
         return undefined;
     }
 }
-

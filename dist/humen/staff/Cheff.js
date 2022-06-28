@@ -19,8 +19,10 @@ exports.Cheff = void 0;
 var Staff_1 = require("./Staff");
 var Cheff = /** @class */ (function (_super) {
     __extends(Cheff, _super);
-    function Cheff(name, age, gender, category) {
-        return _super.call(this, category, name, age, gender) || this;
+    function Cheff(category, name, age, gender, salary) {
+        var _this = _super.call(this, category, name, age, gender) || this;
+        _this.salary = salary;
+        return _this;
     }
     return Cheff;
 }(Staff_1.Staff));
