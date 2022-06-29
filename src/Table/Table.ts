@@ -1,14 +1,8 @@
 
-import { Chair } from "./Chair";
+
+// import { Recept } from "./Recept";
 import { Tablestatus } from "./TableStatus";
-
 export class Table {
-    chair: Chair[]=[];
-    
-    constructor(private id:number, private  status:Tablestatus) { }
-
-    
-   addCahir(chair:Chair){
-    return this.chair.push(chair)
-   }
+    // recept:Recept 
+    constructor(private id:number) { }
 }
