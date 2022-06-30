@@ -7,8 +7,12 @@ export abstract class Item {
       protected title: string,
       protected category: MainDrinkCategory | MainFoodCategory,
       protected price: number) { }
-      
-      getprice(){
-         return this.price;
-      }
+
+
+   getPrice(){
+      return this.price;
+   }
+   getTitle(){
+      return this.title;
+   }
 }

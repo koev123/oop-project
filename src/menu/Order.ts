@@ -11,10 +11,7 @@ import { MenuItem } from "./MenuItem";
 
 
 export class Order{
-
     private  menuItem:(Food|Drink)[]=[];
-    
-  
     private table:Table;
     
     private waiter:Waiter;
@@ -23,18 +20,21 @@ export class Order{
         private orderId:number,
        )
         {}
-        addItem(newItem:Drink | Food){
-           this.menuItem.push(newItem);
-        }
-        getOrderItem(){
-           return this.menuItem;
-        }
-        addWaiter(waiter:Waiter){
-            this.waiter = waiter;
-        }
-        setTable(table:Table){
-            this.table = table;
-        }
-    } 
+    addItem(newItem:Drink | Food){
+        this.menuItem.push(newItem);
+    }
+    getOrderItem(){
+        return this.menuItem;
+    }
+    addWaiter(waiter:Waiter){
+        this.waiter = waiter;
+    }
+    setTable(table:Table){
+        this.table = table;
+    }
+    getTable(){
+        return this.table;
+    }
+} 
 
     

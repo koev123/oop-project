@@ -85,14 +85,8 @@ order2.addItem(drink4);
 order2.addItem(food3);
 order2.addWaiter(phanith);
 order2.setTable(table2);
-// console.log(order2);
+console.log(order2);
 
-
-// create recept
-
-let recept=new Recept(1)
-
-recept.addorderId(order1);
-recept.menuManage()
-console.log(recept);
+let receipt = new Recept();
+console.log(receipt.receipt(order2));
 

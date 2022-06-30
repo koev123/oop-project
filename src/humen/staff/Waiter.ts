@@ -6,7 +6,7 @@ export class Waiter extends Staff {
     super(category,name, age ,gender);
   } 
 
-  getNameWaiter(){
+  getName(){
     return this.name;
   }
 }
