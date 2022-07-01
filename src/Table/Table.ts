@@ -1,12 +1,19 @@
+import { Customer } from "../humen/customer/Customer";
 
-
-// import { Recept } from "./Recept";
-import { Tablestatus } from "./TableStatus";
 export class Table {
-    // recept:Recept 
-    constructor(private id:number) { }
+    // recept:Recept
+    customer:Customer[]=[];
+    constructor(private id:number){}
 
     getTableId(){
         return this.id;
     }
+    addCustomer(customer:Customer){
+        return this.customer.push(customer)
+
+    }
+    getCustoner(){
+        return this.customer
+    }
+
 }

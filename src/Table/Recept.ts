@@ -1,5 +1,6 @@
 
 
+import { Customer } from "../humen/customer/Customer";
 import { Order } from "../menu/Order";
 
 
@@ -16,4 +17,5 @@ export class Recept{
         return result + "Total: " + totalPrice;
 
     }
+
 }

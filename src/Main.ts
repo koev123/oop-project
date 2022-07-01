@@ -34,19 +34,28 @@ let table2=new Table(2);
 let table3=new Table(3);
 let table4=new Table(4);
 
-// add chair to table
-restaurant.addTable(table1)
-restaurant.addTable(table2)
-restaurant.addTable(table3)
-restaurant.addTable(table4)
-// console.log(restaurant)
-//------------------------------block Customer to order--------------------------
-//create customer
+//------------------------------block Customer--------------------------
+// create customer
 let cu1=new Customer(1)
 let cu2=new Customer(2)
 let cu3=new Customer(3)
 let cu4=new Customer(4)
 
+table1.addCustomer(cu1)
+table2.addCustomer(cu2)
+table3.addCustomer(cu3)
+table4.addCustomer(cu4)
+// add Customer to table
+table1.getCustoner()
+table2.getCustoner()
+table3.getCustoner()
+table4.getCustoner()
+// add restauant to table
+restaurant.addTable(table1)
+restaurant.addTable(table2)
+restaurant.addTable(table3)
+restaurant.addTable(table4)
+// --------------------Block Order-----------------------
 // create Item_Drink
 let drink1 = new Drink (1,'Beer',2.50,MainDrinkCategory.ABC_BEER); 
 let drink2 = new Drink (2,'Coke',1,MainDrinkCategory.COCACOLA); 
@@ -59,34 +68,45 @@ let food3 = new Food(3,'sea food',8,MainFoodCategory.CLAM_GRILL);
 let food4 = new Food(4,'Pizza',9,MainFoodCategory.PIZZA);
 // Create OrderItem & Add Item
 let orderItem1 = new MenuItem();
-let orderItem2 = new MenuItem();
 orderItem1.addItem(drink1);
 orderItem1.addItem(drink3);
+orderItem1.addItem(drink4);
+orderItem1.addItem(drink2);
 orderItem1.addItem(food1);
 orderItem1.addItem(food4);
+orderItem1.addItem(food3);
+orderItem1.addItem(food1);
+orderItem1.addItem(food2);
 orderItem1.getItem();
-orderItem2.addItem(food3);
-orderItem2.addItem(food2);
-orderItem2.addItem(drink4);
-orderItem2.addItem(drink2);
-orderItem2.getItem();
-
-
-// create Order & add orderItem to Order.
+// create order
 let order1 = new Order(1);
+// add Item to Order.
 order1.addItem(drink1)
+order1.addItem(drink2)
+order1.addItem(drink4)
 order1.addItem(food2)
+order1.addItem(food3)
+order1.addItem(food4)
+order1.addItem(food1)
+// add waiter to order.
 order1.addWaiter(koev);
+// set order on table
 order1.setTable(table1);
-// console.log(order1);
-//
-let order2 = new Order(2);
-order2.addItem(drink4);
-order2.addItem(food3);
-order2.addWaiter(phanith);
-order2.setTable(table2);
-console.log(order2);
+// addOrderList to Cheff
+chansokChef.addOrderlist(order1);
+// console.log(chansokChef);
 
+// recept managerman
 let receipt = new Recept();
-console.log(receipt.receipt(order2));
+
+// --------console.log----For keov----------
+// console.log(table1)
+// console.log(restaurant);
+
+//------------consol.log--------------------------
+// console.log(orderItem1.getItem());
+
+// console.log(order1);
+
+console.log(receipt.receipt(order1));
 

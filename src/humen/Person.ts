@@ -1,7 +1,7 @@
 export enum Gender {
-    MALE,
-    FEMALE,
-  }
+    FEMALE = 'FEMALE',
+    MALE = "MALE",
+}
   
   export abstract class Person {
     protected phone?: number;
